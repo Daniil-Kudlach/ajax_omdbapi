@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AJAX</title>
+    <link rel="stylesheet" href="style/main.css">
+</head>
+
+<body>
+    <main>
+        <section class="search-section">
+            <h3>Search:</h3>
+            <div class="search-container">
+                <label for="title-input" class='search-elements'>
+                    <b>Title</b>
+                    <input type="text" name="title" id="title-input">
+                </label>
+                <label for="select-type" class='search-elements'>
+                    <b>Type</b>
+                    <select name="type" id="select-type">
+                        <option value="movie" selected="selected">Movie</option>
+                        <option value="series">Series</option>
+                        <option value="episode">Episode</option>
+                    </select>
+                </label>
+                <input type="button" value="SEARCH" class='search-elements btn-search'>
+            </div>
+        </section>
+        <section class="result-section">
+        </section>
+    </main>
+    <script src="app/main.js"></script>
+</body>
+
+</html>

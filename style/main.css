@@ -1,0 +1,202 @@
+body {
+    background-color: #FBF2E9;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.search-container {
+    width: 300px;
+    padding: 15px;
+    border: 1px solid gray;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    border-radius: 5px;
+    box-shadow: 0 0 10px 2px black;
+}
+
+#select-type,
+#title-input {
+    width: 220px;
+}
+
+.btn-search {
+    font-weight: bold;
+}
+
+.search-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.result-section {
+    width: 80%;
+    margin: auto;
+}
+
+label {
+    display: flex;
+    justify-content: space-between;
+}
+
+input {
+    border-radius: 5px;
+}
+
+.search-elements {
+    margin: 5px;
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.pagination a,
+.pagination span {
+    color: black;
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
+    transition: background-color .3s;
+    border-radius: 5px;
+    user-select: none;
+    cursor: pointer;
+}
+
+.pagination a.active {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.pagination a:hover:not(.active) {
+    background-color: #ddd;
+}
+
+.cards {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.card {
+    border: 2px solid white;
+    border-radius: 5px;
+    box-shadow: 0 0 10px 5px white;
+    padding: 15px;
+    min-width: 300px;
+    min-height: 200px;
+    flex: 0 0 10px;
+    display: flex;
+    margin: 20px;
+}
+
+.card-text-container {
+    width: 50%;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card-text-type {
+    font-size: small;
+}
+
+.card-text-title {
+    font-weight: bold;
+}
+
+.card-text-year {
+    font-size: large;
+}
+
+.img {
+    width: 50%;
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.modal {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 9999;
+    position: fixed;
+    left: 0;
+    top: 0;
+    cursor: pointer;
+}
+
+.card-btn-details {
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.modal-open {
+    overflow: hidden;
+    z-index: 1;
+}
+
+.modal-h3 {
+    height: 5%;
+    background-color: #FBF2E9;
+    width: 90%;
+    text-align: center;
+    font-weight: bold;
+    padding: 10px 0 10px 0;
+}
+
+.modal-fullcard {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 10px 0 10px 0;
+    width: 90%;
+    height: 90%;
+    background-color: #FBF2E9;
+    overflow-y: auto;
+}
+
+
+.fullcard-img {
+    min-width: 350px;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    background-color: #FBF2E9;
+}
+
+.fullcard-table {
+    height: 100%;
+    max-width: 350px;
+    min-width: 250px;
+    margin-left: 10px;
+}
+
+.fullcard-table tr td:first-of-type {
+    font-weight: bold;
+}
+
+.fullcard-table tr td {
+    word-wrap: break-word;
+}
+
+.message-error {
+    text-align: center;
+}
