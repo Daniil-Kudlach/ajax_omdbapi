@@ -21,7 +21,7 @@ const options = {
 // обьект с фильмами - ключ ->ID фильма
 let films = {};
 // ссылка - если постера в фильме нет
-let noImage = "../img/no_image.jpg";
+let noImage = "././img/no_image.jpg";
 dom.resultSection.appendChild(dom.pagination);
 dom.resultSection.appendChild(dom.cards);
 dom.resultSection.appendChild(dom.error);
